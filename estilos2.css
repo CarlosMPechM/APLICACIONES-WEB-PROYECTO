@@ -1,0 +1,222 @@
+.Titulo-P
+{
+    color: #977833;
+    font: sans-serif;
+}
+.Titulo-S
+{
+    color: #a88d52;
+    font: sans-serif;
+}
+.Subtitulo1
+{
+    color: #a88d52;
+    font: sans-serif;
+}
+.Resaltado1
+{
+    color: #977833;
+    font: 5em sans-serif;
+}
+.Desvanecido1
+{
+    color: rgb(207, 181, 124);
+    font: sans-serif;
+}
+.Contenido1
+{
+    color: #977833;
+    font: sans-serif;
+}
+.Contenido2
+{
+    color: #a88d52;
+    font: sans-serif;
+}
+.Imagen-Logo
+{
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    max-width: 10em;
+    max-height: 8em;
+}
+.Imagen-PerfilC
+{
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    max-width: 5em;
+    max-height: 5em;
+}
+.Imagen-PerfilV
+{
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.Imagen-Icono
+{
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    max-width: 4em;
+    max-height: 4em;
+}
+.Imagen-Cita
+{
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    max-width: 12em;
+    max-height: 12em;
+}
+.Imagen-G
+{
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.D-Superior
+{
+    padding: 3%;
+    background-color: #FFF4DB;
+    border-radius: 3%;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    -ms-border-radius: 3%;
+    -o-border-radius: 3%;
+}
+.D-CuerpoB
+{
+    padding: 3%;
+    background-color: #E5D8BA;
+    border-radius: 3%;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    -ms-border-radius: 3%;
+    -o-border-radius: 3%;
+}
+.D-Cuerpo
+{
+    padding: 3%;
+    background-color: #FFF4DB;
+    border-radius: 3%;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    -ms-border-radius: 3%;
+    -o-border-radius: 3%;
+}
+.D-Cita
+{
+    padding: 5%;
+    background-color: #FFFCF6;
+    border-radius: 3%;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    -ms-border-radius: 3%;
+    -o-border-radius: 3%;
+}
+.D-Cart
+{
+    padding: 1%;
+    background-color: #FFFCF6;
+    border-radius: 3%;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    -ms-border-radius: 3%;
+    -o-border-radius: 3%;
+}
+.D-Modal
+{
+    padding: 3%;
+    background-color: #FFF4DB;
+}
+.D-Modal2
+{
+    padding: 5%;
+    background-color: #FFFCF6;
+    border-radius: 1%;
+    -webkit-border-radius: 1%;
+    -moz-border-radius: 1%;
+    -ms-border-radius: 1%;
+    -o-border-radius: 1%;
+}
+.D-Seccion
+{
+    padding: 3%;
+    background-color: #FFF4DB;
+    border-radius: 4%;
+    -webkit-border-radius: 4%;
+    -moz-border-radius: 4%;
+    -ms-border-radius: 4%;
+    -o-border-radius: 4%;
+}
+.D-Seccion2
+{
+    padding: 3%;
+    background-color: #FFFCF6;
+    border-radius: 4%;
+    -webkit-border-radius: 4%;
+    -moz-border-radius: 4%;
+    -ms-border-radius: 4%;
+    -o-border-radius: 4%;
+}
+.D-Nav-F
+{
+    padding: 1%;
+    background-color: #9EC3FF;
+}
+.D-Icono
+{
+    background-color: #9EC3FF;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    max-width: 5em;
+    max-height: 5em;
+    padding: 2%;
+}
+.D-Boton1
+{
+    padding: 3%;
+    background-color: #E5D8BA;
+    border-radius: 4%;
+    -webkit-border-radius: 4%;
+    -moz-border-radius: 4%;
+    -ms-border-radius: 4%;
+    -o-border-radius: 4%;
+}
+.D-Boton2
+{
+    padding: 3%;
+    background-color: #FFFCF6;
+    border-radius: 4%;
+    -webkit-border-radius: 4%;
+    -moz-border-radius: 4%;
+    -ms-border-radius: 4%;
+    -o-border-radius: 4%;
+}
+body
+{
+    background-color: #CADEFF;
+    padding: 5%;
+}
+.color1
+{
+    color: #FFF4DB;
+}
