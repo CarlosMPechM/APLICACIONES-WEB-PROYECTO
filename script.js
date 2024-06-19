@@ -32,8 +32,11 @@ function closeNav() {
     document.getElementById("mySideMenu").style.width = "0";
 }
 
-function toggleDropdown(id) {
-    var dropdown = document.getElementById(id);
+// Manejar dropdowns del menú lateral
+function toggleDropdown(event) {
+    const button = event.target;
+    const dropdown = button.nextElementSibling;
+
     if (dropdown.style.display === "block") {
         dropdown.style.display = "none";
     } else {
@@ -57,6 +60,7 @@ function closeMenu() {
 document.addEventListener('DOMContentLoaded', (event) => {
     const openBtn = document.querySelector('.open-btn');
     const closeBtn = document.querySelector('.close-btn');
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
 
     openBtn.addEventListener('click', () => {
         openMenu();
@@ -64,5 +68,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     closeBtn.addEventListener('click', () => {
         closeMenu();
+    });
+
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', toggleDropdown);
     });
 });
