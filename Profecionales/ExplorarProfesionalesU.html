@@ -2,207 +2,72 @@
 <html lang="es">
 
 <head>
-    <link rel="icon" href="/Imagenes/CuteCore.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="/estilos2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explorar profesionales</title>
-    <style>
-        /* Estilos adicionales pueden ir aquí si es necesario */
-    </style>
+    <link rel="stylesheet" href="Style_2.css">
 </head>
 
+<header>
+    <button class="open-btn" onclick="openMenu()">☰</button>
+</header>
+
 <body>
-    <div class="row">
-        <div class="container-fluid col-md-1 align-items-start position-absolute top-0 start-0">
-            <!-- navBar -->
-            <div class="D-Icono position-absolute top-0 start-0">
-                <a class="align-items-center" href="javascript:void(0)" role="button" aria-controls="side-menu" onclick="openMenu()">
-                    <img src="/Imagenes/Motivation.jpg" alt="" class="Imagen-Icono img-fluid">
-                </a>
-            </div>
-        </div>
-        <div class="container-fluid col-md-10 align-items-end">
-            <div class="row container-fluid overflow-visible align-items-center D-Superior">
-                <div class="col-md-2 row align-items-start">
-                    <img src="/Imagenes/Logo.jpg" alt="" class="Imagen-Logo img-fluid float-start">
-                </div>
-                <div class="col-md-8 align-items-start">
-                    <h1 class="Titulo-P">MMSJ - Proximas citas</h1>
-                </div>
-            </div>
-            <br>
-            <div class="row container-fluid D-Modal overflow-auto align-items-center">
-                <div class="D-Modal2">
-                    <div class="row container-fluid">
-                        <div class="col-md-9 D-Seccion align-items-start">
-                            <form action="#" method="get" style="width: 100%;">
-                                <input type="submit" class="Titulo-P" value="🔍" style="width: 10%;">
-                                <input type="search" placeholder="Buscar a un profesional..." name="buscar" style="width: 80%;">
-                            </form>
-                        </div>
-                        <div class="col-md-1 D-Seccion align-items-end">
-                        </div>
-                    </div><br>
-                    <div class="row"></div><br>
-                </div>
-            </div>
-            <br>
-            <div class="row container-fluid D-Cuerpo overflow-auto">
-                <div class="row align-items-center text-center">
-                    <h2 class="Titulo-S">Citas por venir</h2>
-                </div>
-                <div class="row align-items-center text-center">
-                    <p class="Subtitulo1">Podrás visualizar las citas que están programadas por ocurrir en fechas próximas</p>
-                </div>
-                <br>
-                <div class="row align-items-center">
-                    <a href="#exampleModalToggle1" role="button" class="btn D-Cart">
-                        <div class="align-items-center">
-                            <div class="row">
-                                <div class="container-fluid col-md-3">
-                                    <img src="/Imagenes/Consejo.jpg" alt="" class="Imagen-Cita img-fluid">
-                                </div>
-                                <div class="container-fluid col-md-9">
-                                    <div class="row">
-                                        <h3 class="Titulo-S text-center"><b>Nombre completo a continuación</b></h3>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-5 container-fluid">
-                                            <p class="Desvanecido1 text-start"><b>Fecha: </b>DD/MM/YYYY</p>
-                                        </div>
-                                        <div class="col-md-5 container-fluid">
-                                            <p class="Desvanecido1 text-start"><b>Estado: </b>Pendiente</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <p class="Contenido1 text-start"><b>Asunto: </b>Asunto justificado</p>
-                                    </div>
-                                    <div class="row">
-                                        <p class="Contenido1 text-start"><b>Motivo: </b>Justificación</p>
-                                    </div>
-                                    <div class="row">
-                                        <p class="Desvanecido1 text-start"><b>Estado de la solicitud: </b>Aceptada</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>MMSJ - Próximas citas</h1>
         </div>
 
-        <div id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel1" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content D-Modal">
-                    <div class="modal-header">
-                        <h5 class="modal-title Titulo-P" id="exampleModalToggleLabel1"><b>Datos del profesional</b></h5>
-                    </div>
-                    <div class="modal-body D-Modal2">
-                        <div class="row container-fluid align-items-center">
-                            <div class="col-md-3 overflow-auto">
-                                <div class="row">
-                                    <img src="/Imagenes/PerfilV.jpg" alt="" class="Imagen-G mx-auto img-fluid float-start">
-                                </div>
-                                <div class="row D-Seccion">
-                                    <div class="D-Boton2">
-                                        <p class="Desvanecido1"><b>Opiniones: </b>Pediatra</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-8 D-Seccion">
-                                <div class="row">
-                                    <h5 class="Subtitulo1 text-center">Nombre1 nombre2 Apellido1 Apellido2</h5>
-                                </div>
-                                <br>
-                                <div class="row D-Boton2 col-md-10">
-                                    <p class="Desvanecido1"><b>Área general: </b>Pediatra</p>
-                                </div>
-                                <br>
-                                <div class="row D-Boton2 col-md-10">
-                                    <p class="Desvanecido1"><b>Área específica: </b>Depresión infantil</p>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row container-fluid align-items-center">
-                            <div class="D-Seccion">
-                                <div class="row">
-                                    <h5 class="Subtitulo1 text-center">Presentación</h5>
-                                </div>
-                                <br>
-                                <div class="row D-Boton2 col-md-10">
-                                    <p class="Desvanecido1">Hola a todos. Me llamo Alejandro, estoy aquí para brindar apoyo a infantes que pasan por situaciones tan complicadas. “Un niño no debe pasar por situaciones de este tipo, deben disfrutar su infancia ...”</p>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="row container-fluid D-Seccion align-items-center">
-                                <div class="row">
-                                    <h5 class="Subtitulo1 text-center">Información básica</h5>
-                                </div>
-                                <br>
-                                <div class="row D-Boton2">
-                                    <p class="Desvanecido1"><b>Nombre: </b>Alejandro Gonzales Perez</p>
-                                </div>
-                                <br>
-                                <div class="row D-Boton2">
-                                    <p class="Desvanecido1"><b>Dirección: </b>Yuc, Merida, Col.centro, 65 x 67 y 68 #34 A</p>
-                                </div>
-                                <br>
-                                <div class="row D-Boton2">
-                                    <p class="Desvanecido1"><b>Número telefónico: </b>+52 999 012 3456</p>
-                                </div>
-                                <br>
-                                <div class="row D-Boton2">
-                                    <p class="Desvanecido1"><b>Correo: </b>Alejandro.Matraca@mmsj.prof.mx</p>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="row container-fluid D-Seccion align-items-center">
-                                <div class="row">
-                                    <h5 class="Subtitulo1 text-center">Historial de citas</h5>
-                                </div>
-                                <br>
-                                <div class="row D-Boton2 col-md-10">
-                                    <p class="Desvanecido1"><b>Número de citas completas con éxito: </b>87</p>
-                                </div>
-                                <br>
-                                <div class="row D-Boton2 col-md-10">
-                                    <p class="Desvanecido1"><b>Número de citas canceladas por usuario: </b>87</p>
-                                </div>
-                                <br>
-                                <div class="row D-Boton2 col-md-10">
-                                    <p class="Desvanecido1"><b>Número de citas canceladas por Alejandro: </b>87</p>
-                                </div>
-                                <br>
-                                <div class="row D-Boton2 col-md-10">
-                                    <p class="Desvanecido1"><b>Número de citas pendientes de Alejandro: </b>56</p>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="row container-fluid D-Seccion align-items-center">
-                                <div class="row">
-                                    <h5 class="Subtitulo1 text-center">Estado</h5>
-                                </div>
-                                <br>
-                                <div class="row D-Boton2 col-md-10">
-                                    <p class="Desvanecido1"><b>Probabilidad de aceptar solicitud para cita: </b>87%</p>
-                                </div>
-                                <br>
-                                <div class="row D-Boton2 col-md-10">
-                                    <p class="Desvanecido1"><b>Estado: </b>Ocupado por citas pendientes.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" style="margin:auto;"><b class="Titulo-P">Regresar atrás</b></button>
-                            <a href="/AgendarCitaU.html" type="button" style="margin:auto;"><b class="Titulo-P">Agendar cita</b></a>
-                        </div>
-                    </div>
-                </div>
+        <div class="search-bar">
+            <form action="#" method="get" style="width: 100%;">
+                <input type="search" placeholder="Buscar a un profesional..." name="buscar">
+                <input type="submit" value="🔍">
+            </form>
+        </div>
+
+        <div class="content">
+            <h2>Citas por venir</h2>
+            <p>Podrás visualizar las citas que están programadas por ocurrir en fechas próximas</p>
+        </div>
+
+        <div class="appointments">
+            <div class="appointment-card" onclick="openModal()">
+                <h3><b>Nombre completo a continuación</b></h3>
+                <p><b>Fecha:</b> DD/MM/YYYY</p>
+                <p><b>Estado:</b> Pendiente</p>
+                <p><b>Asunto:</b> Asunto justificado</p>
+                <p><b>Motivo:</b> Justificación</p>
+                <p><b>Estado de la solicitud:</b> Aceptada</p>
             </div>
         </div>
     </div>
 
-    <!-- Menú lateral -->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Editar Cita</h2>
+            <form id="editForm">
+                <label for="name">Nombre completo:</label><br>
+                <input type="text" id="name" name="name" value="Nombre completo a continuación"><br><br>
+                <label for="date">Fecha:</label><br>
+                <input type="date" id="date" name="date"><br><br>
+                <label for="status">Estado:</label><br>
+                <input type="text" id="status" name="status" value="Pendiente"><br><br>
+                <label for="subject">Asunto:</label><br>
+                <input type="text" id="subject" name="subject" value="Asunto justificado"><br><br>
+                <label for="reason">Motivo:</label><br>
+                <input type="text" id="reason" name="reason" value="Justificación"><br><br>
+                <label for="requestStatus">Estado de la solicitud:</label><br>
+                <input type="text" id="requestStatus" name="requestStatus" value="Aceptada"><br><br>
+                <input type="submit" value="Guardar cambios">
+            </form>
+        </div>
+    </div>
+    <script src="Script_2.js"></script>
+
+        <!-- Menú lateral -->
     <div id="side-menu" class="side-menu">
         <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
         <div class="menu-content">
@@ -210,7 +75,7 @@
                 <button class="btn"><a href="/PerfilU.html">Ver perfil</a></button>
             </div>
             <div class="menu-section">
-                <button class="btn dropdown-toggle" onclick="toggleDropdown(this)">Historial de tus citas</button>
+                <button class="btn dropdown-toggle">Historial de tus citas</button>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="/AgendarCitaU.html">Agendar Cita</a></li>
                     <li><a class="dropdown-item" href="/CitasProximasU.html">Citas por venir</a></li>
@@ -220,14 +85,14 @@
                 </ul>
             </div>
             <div class="menu-section">
-                <button class="btn dropdown-toggle" onclick="toggleDropdown(this)">Sobre nosotros y la app</button>
+                <button class="btn dropdown-toggle">Sobre nosotros y la app</button>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="/Equipo.html">¿Quiénes somos?</a></li>
                     <li><a class="dropdown-item" href="/Proyecto.html">El propósito de WebPsy</a></li>
                 </ul>
             </div>
             <div class="menu-section">
-                <button class="btn dropdown-toggle" onclick="toggleDropdown(this)">Necesitas ayuda para entender</button>
+                <button class="btn dropdown-toggle">Necesitas ayuda para entender</button>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="https://www.who.int/es/news-room/fact-sheets/detail/mental-health-strengthening-our-response" target="_blank">La salud mental</a></li>
                     <li><a class="dropdown-item" href="https://teleton.org/la-importancia-de-la-salud-mental/" target="_blank">Importancia de la salud mental</a></li>
@@ -238,9 +103,9 @@
             </div>
         </div>
     </div>
-    <!-- Fin del menú lateral -->
+    <!-- final del menu lateral -->
 
-    <script src="/scripts.js"></script>
+
 </body>
 
 </html>
