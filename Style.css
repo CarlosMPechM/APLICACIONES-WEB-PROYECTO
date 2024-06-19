@@ -208,18 +208,25 @@ header {
 .dropdown-menu {
     display: none;
     flex-direction: column;
-    background-color: #222;
     padding-left: 20px;
+    margin: 0;
+    list-style: none;
 }
 
 .dropdown-item {
-    color: #fff;
+    color: #ffffffc5;
     text-decoration: none;
-    padding: 5px 0;
+    padding: 5px 10px;
+    display: block;
+    /*border-bottom: 1px solid #333; Línea separadora */
+    transition: background-color 0.3s, color 0.3s;
+    font-size: small;
+    
 }
 
 .dropdown-item:hover {
-    color: #ddd;
+    background-color: #444; /* Fondo al pasar el cursor */
+    color: #ddd; /* Color de texto al pasar el cursor */
 }
 
 /*slider menu*/
