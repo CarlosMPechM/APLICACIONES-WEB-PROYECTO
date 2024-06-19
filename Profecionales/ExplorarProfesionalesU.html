@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="icon" href="/Imagenes/CuteCore.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="Style_2.css">
+    <title>Explorar profesionales</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <!-- navBar -->
+            <div class="icon">
+                <a href="#menu" id="menu-toggle"><img src="/Imagenes/Motivation.jpg" alt="" class="icon-img"></a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header">
+                <div class="logo">
+                    <img src="/Imagenes/Logo.jpg" alt="" class="logo-img">
+                </div>
+                <div class="title">
+                    <h1>MMSJ - Próximas citas</h1>
+                </div>
+            </div>
+            <div class="search-section">
+                <form action="#" method="get">
+                    <input type="submit" class="search-btn" value="🔍">
+                    <input type="search" placeholder="Buscar a un profesional..." name="buscar" class="search-input">
+                </form>
+            </div>
+            <div class="body">
+                <div class="body-header">
+                    <h2>Citas por venir</h2>
+                    <p>Podrás visualizar las citas que están programadas por ocurrir en fechas próximas</p>
+                </div>
+                <div class="appointments">
+                    <a class="appointment-card" href="#modal" id="open-modal">
+                        <div class="appointment-content">
+                            <div class="appointment-img">
+                                <img src="/Imagenes/Consejo.jpg" alt="">
+                            </div>
+                            <div class="appointment-details">
+                                <h3>Nombre completo a continuación</h3>
+                                <p><b>Fecha: </b>DD/MM/YYYY</p>
+                                <p><b>Estado: </b>Pendiente</p>
+                                <p><b>Asunto: </b>Asunto justificado</p>
+                                <p><b>Motivo: </b>Justificación</p>
+                                <p><b>Estado de la solicitud: </b>Aceptada</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="menu" class="offcanvas">
+            <div class="offcanvas-header">
+                <img src="/Imagenes/HopeCore.jpg" alt="" class="offcanvas-img">
+            </div>
+            <div class="offcanvas-body">
+                <a class="dropdown-item" href="/PerfilU.html">Ver perfil</a>
+                <a class="dropdown-item" href="/ExplorarProfesionalesU.html">Explorar profesionales</a>
+                <div class="dropdown">
+                    <button class="dropdown-btn">Historial de tus citas</button>
+                    <div class="dropdown-content">
+                        <a class="dropdown-item" href="/AgendarCitaU.html">Agendar Cita</a>
+                        <a class="dropdown-item" href="/CitasProximasU.html">Citas por venir</a>
+                        <a class="dropdown-item" href="/CitasCompletadasU.html">Citas finalizadas</a>
+                        <a class="dropdown-item" href="/CitasCanceladasU.html">Citas Canceladas</a>
+                        <a class="dropdown-item" href="/SolicitudesPendientesU.html">Solicitudes pendientes</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-btn">Sobre nosotros y la app</button>
+                    <div class="dropdown-content">
+                        <a class="dropdown-item" href="/Equipo.html">¿Quienes somos?</a>
+                        <a class="dropdown-item" href="/Proyecto.html">El propósito de MMJB</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-btn">Necesitas ayuda para entender</button>
+                    <div class="dropdown-content">
+                        <a class="dropdown-item" href="https://www.who.int/es/news-room/fact-sheets/detail/mental-health-strengthening-our-response" target="_blank">La salud mental</a>
+                        <a class="dropdown-item" href="https://teleton.org/la-importancia-de-la-salud-mental/" target="_blank">Importancia de la salud mental</a>
+                    </div>
+                </div>
+                <a class="dropdown-item" href="/PaginaPrincipal.html">Cerrar sesión</a>
+            </div>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Datos del profesional</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="professional-details">
+                        <div class="profile-img">
+                            <img src="/Imagenes/PerfilV.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h5>Nombre1 nombre2 Apellido1 Apellido2</h5>
+                            <p><b>Área general: </b>Pediatra</p>
+                            <p><b>Área específica: </b>Depresión infantil</p>
+                            <h5>Presentación</h5>
+                            <p>Hola a todos. Me llamo Alejandro, estoy aquí para brindar apoyo a infantes que pasan por situaciones tan complicadas. “Un niño no debe pasar por situaciones de este tipo, deben disfrutar su infancia ...”</p>
+                            <h5>Información básica</h5>
+                            <p><b>Nombre: </b>Alejandro Gonzales Perez</p>
+                            <p><b>Dirección: </b>Yuc, Merida, Col.centro, 65 x 67 y 68 #34 A</p>
+                            <p><b>Número telefónico: </b>+52 999 012 3456</p>
+                            <p><b>Correo: </b>Alejandro.Matraca@mmsj.prof.mx</p>
+                            <h5>Historial de citas</h5>
+                            <p><b>Número de citas completas con éxito: </b>87</p>
+                            <p><b>Número de citas canceladas por usuario: </b>87</p>
+                            <p><b>Número de citas canceladas por Alejandro: </b>87</p>
+                            <p><b>Número de citas pendientes de Alejandro: </b>56</p>
+                            <h5>Estado</h5>
+                            <p><b>Probabilidad de aceptar solicitud para cita: </b>87%</p>
+                            <p><b>Estado: </b>Ocupado por citas pendientes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn close-modal">Regresar atrás</button>
+                    <a href="/AgendarCitaU.html" class="btn">Agendar cita</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script2.js"></script>
+</body>
+
+</html>
