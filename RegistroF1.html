@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js/scrollHandler.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="left-column">
+      <!-- Puedes cambiar la URL de la imagen para usar tu propia imagen -->
+      <img src="/Imagenes/psicologo-tudo-sobre-psicologia-1-1-1024x683.jpg" alt="">
+    </div>
+    <div class="right-column">
+      <div class="content">
+        <div class="form-box">
+          <h2>Crear una cuenta</h2>
+          <form id="registrationForm" action="#" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit" id="registerButton">Registrarse</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // JS
+    document.addEventListener('DOMContentLoaded', function() {
+      var form = document.getElementById('registrationForm');
+      console.log('Formulario obtenido:', form); 
+
+      if (form) {
+        form.addEventListener('submit', function(event) {
+          event.preventDefault();
+          console.log('Evento submit capturado y comportamiento por defecto prevenido.'); 
+
+          window.location.href = '/RegistroF2.html';
+          console.log('Redirigiendo a /RegistroF2.html'); 
+        });
+      } else {
+        console.error('No se pudo obtener el formulario.');
+      }
+    });
+
+  </script>
+</body>
+</html>
