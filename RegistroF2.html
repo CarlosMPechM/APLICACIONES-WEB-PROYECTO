@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Adulto</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="F2.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="left-column">
+      <!-- Puedes cambiar la URL de la imagen para usar tu propia imagen -->
+      <img src="/Imagenes/no-hace-falta-estar-loco-para-ir-al-psicologo.jpg" alt="">
+    </div>
+    <div class="right-column">
+      <div class="content">
+        <div class="form-box">
+          <h2>Ingresa Tus Datos</h2>
+          <form action="#" method="POST">
+            <label for="nombre">Nombre(s):</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido(s):</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="fechanacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechanacimiento" name="fechanacimiento" required>
+
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required>
+
+            <label for="direccion">Direccion:</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="curp">Curp:</label>
+            <input type="text" id="curp" name="curp" required>
+
+            <div class="button-container">
+                <!-- Botón para Profesionales -->
+                <button type="button" class="button-profesionales" id="buttonProfesionales">Profesionales</button>
+              
+                <!-- Botón para Adultos -->
+                <button type="submit" class="button-adultos">Adultos</button>
+              
+                <!-- Botón para Niños -->
+                <button type="submit" class="button-ninos">Niños</button>
+              </div>              
+
+              <button type="submit">Registrarse</button>
+          </form>
+
+          <script>
+            // JS
+            document.addEventListener('DOMContentLoaded', function() {
+              // Obtener el botón de profesionales por su ID
+              var buttonProfesionales = document.getElementById('buttonProfesionales');
+              console.log('Botón Profesionales obtenido:', buttonProfesionales); // Depuración
+
+              // Verificar si el botón se obtuvo correctamente
+              if (buttonProfesionales) {
+                // Agregar un listener al evento click del botón
+                buttonProfesionales.addEventListener('click', function(event) {
+                  // Prevenir el comportamiento por defecto del submit
+                  event.preventDefault();
+                  console.log('Evento click en botón Profesionales capturado.'); // Depuración
+
+                  // Redirigir a otra página
+                  window.location.href = '/RegistroProfesional.html';
+                  console.log('Redirigiendo a /RegistroProfesional.html'); // Depuración
+                });
+              } else {
+                console.error('No se pudo obtener el botón Profesionales.');
+              }
+            });
+          </script>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
