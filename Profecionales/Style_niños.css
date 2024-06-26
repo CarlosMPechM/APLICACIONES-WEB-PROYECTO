@@ -1,3 +1,4 @@
+/* Estilos específicos para niños y adolescentes */
 body {
     font-family: Arial, sans-serif;
 }
@@ -6,7 +7,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #156cb4;
+    background-color: #15b47f;
     padding: 15px 20px;
     position: relative;
     top: 0;
@@ -97,10 +98,6 @@ header {
     background-color: #104a7a;
 }
 
-.create-appointment {
-    text-align: center;
-    margin-top: 20px;
-}
 
 .create-appointment button {
     padding: 10px 20px;
@@ -153,24 +150,22 @@ header {
     cursor: pointer;
 }
 
-/* Estilo del botón de menú */
 .open-btn {
     font-size: 30px;
     cursor: pointer;
     color: #fff;
-    background-color: #156cb4;
+    background-color: #15b47f;
     border: none;
     margin-left: 10px;
-    /*position: absolute;*/
-    top: 6px; /* Ajusta según sea necesario */
-    left: 20px; /* Ajusta según sea necesario */
+    top: 6px;
+    left: 20px;
 }
 
-/* Estilo del menú lateral */
 .side-menu {
     height: 100%;
     width: 0;
     position: fixed;
+    z-index: 1001;
     top: 0;
     left: 0;
     background-color: #111;
@@ -190,17 +185,6 @@ header {
 .side-menu .menu-content {
     padding: 8px 32px;
     color: #fff;
-}
-
-.side-menu .menu-header {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.side-menu .menu-icon {
-    width: 50px;
-    height: 50px;
 }
 
 .menu-section {
@@ -253,7 +237,6 @@ header {
     color: #ddd;
 }
 
-/*slider menu*/
 .side-menu {
     height: 100%;
     width: 0;

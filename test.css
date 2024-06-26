@@ -10,13 +10,15 @@ header {
     padding: 15px 20px;
     position: relative;
     top: 0;
+ 
 }
 
 .title h1 {
     margin: 0px;
     font-size: 24px;
     color: #ece6e6;
-    text-align: center;
+    text-align: center;   
+    
 }
 
 .container {
@@ -68,9 +70,11 @@ header {
     padding: 20px;
     margin-bottom: 20px;
     cursor: pointer;
+    
     background-color: #fff;
     margin-bottom: 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 .appointment-card h3 {
@@ -79,42 +83,6 @@ header {
 
 .appointment-card p {
     margin: 5px 0;
-}
-
-.appointment-card button {
-    margin: 5px;
-    padding: 10px;
-    font-size: 14px;
-    cursor: pointer;
-    background-color: #156cb4;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.appointment-card button:hover {
-    background-color: #104a7a;
-}
-
-.create-appointment {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.create-appointment button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #156cb4;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.create-appointment button:hover {
-    background-color: #104a7a;
 }
 
 .modal {
@@ -164,6 +132,7 @@ header {
     /*position: absolute;*/
     top: 6px; /* Ajusta según sea necesario */
     left: 20px; /* Ajusta según sea necesario */
+
 }
 
 /* Estilo del menú lateral */
@@ -171,6 +140,7 @@ header {
     height: 100%;
     width: 0;
     position: fixed;
+    z-index: 1001;
     top: 0;
     left: 0;
     background-color: #111;
@@ -244,16 +214,19 @@ header {
     text-decoration: none;
     padding: 5px 10px;
     display: block;
+    /*border-bottom: 1px solid #333; Línea separadora */
     transition: background-color 0.3s, color 0.3s;
     font-size: small;
+    
 }
 
 .dropdown-item:hover {
-    background-color: #444;
-    color: #ddd;
+    background-color: #444; /* Fondo al pasar el cursor */
+    color: #ddd; /* Color de texto al pasar el cursor */
 }
 
 /*slider menu*/
+/* Estilo del menú lateral */
 .side-menu {
     height: 100%;
     width: 0;
@@ -263,7 +236,7 @@ header {
     left: 0;
     background-color: #111;
     overflow-x: hidden;
-    transition: width 0.5s;
+    transition: width 0.5s; /* Ajustado */
     padding-top: 60px;
     opacity: 0;
     visibility: hidden;
